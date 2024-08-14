@@ -3,7 +3,8 @@
   "labels": ["dependencies"],
   "extends": [
     ":enableVulnerabilityAlertsWithLabel(vulnerable)",
-    "config:recommended"
+    "config:recommended",
+    ":dependencyDashboard"
   ],
   "automergeSchedule": ["after 5am and before 5pm every weekday"],
   "separateMinorPatch": true,
