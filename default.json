@@ -9,12 +9,14 @@
   "automergeSchedule": ["after 5am and before 5pm every weekday"],
   "separateMinorPatch": true,
   "platformAutomerge": true,
+  "automergeType": "pr",
+  "rebaseWhen": "auto",
   "packageRules": [
     {
       "description": "Automatically merge minor and patch-level updates",
       "matchUpdateTypes": ["minor", "patch", "digest"],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "pr"
     }
   ],
   "regexManagers": [
@@ -67,8 +69,5 @@
       "matchUpdateTypes": ["digest"],
       "automergeType": "branch"
     }
-  ],
-  "automergeType": "pr",
-  "platformAutomerge": true,
-  "rebaseWhen": "auto"
+  ]
 }
